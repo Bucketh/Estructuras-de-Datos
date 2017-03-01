@@ -26,6 +26,6 @@ Elem cabeza(Lista l){
     return l -> dato;
 }
 
-Lista esvacia(Lista l){
+int esvacia(Lista l){
     return l == NULL;
 }
