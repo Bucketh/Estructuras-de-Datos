@@ -50,3 +50,15 @@ Lista Duplica(Lista l){
         return cons(cabeza(l)*2, Duplica(resto(l)));
     }
 }
+
+int EstaEn(Elem e, Lista l){
+    if(esvacia(l)){
+        return 0;
+    }
+    else    if(SonIgualesE(e, cabeza(l))){
+                return 1
+            }
+            else{
+                return EstaEn(e, resto(l));
+            }
+}
